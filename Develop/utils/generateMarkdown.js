@@ -25,13 +25,13 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (!license) {
     return "";
-    const renderBadge = renderLicenseBadge
-    const renderLink = renderLicenseLink
+  }
+    const renderBadge = renderLicenseBadge(license);
+    const renderLink = renderLicenseLink(license);
     return `
     ## License
     ${renderBadge}
-    This project is licenced under the ${link} license.`;
-  }
+    This project is licenced under the ${renderLink} license.`;
 };
 
 // TODO: Create a function to generate markdown for README
