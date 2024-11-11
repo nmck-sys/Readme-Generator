@@ -9,3 +9,7 @@ The purpose of this application was to build a a readme generator with Node.js u
 Credits
 
 Developer: Noah McKinzie
+
+Link to Github: https://github.com/nmck-sys/Readme-Generator
+
+Link to Walkthrough video: https://drive.google.com/file/d/1tFicJQ4huIrtA8Asf_VfFXh6I1raY4wg/view
