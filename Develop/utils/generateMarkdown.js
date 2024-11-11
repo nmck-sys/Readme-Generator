@@ -53,8 +53,15 @@ ${data.contributing}
 Run the test command ${data.tests}
 
 
+
+## License
 ${renderLicenseSection(data.license)}
 
+##Questions
+
+You can reach me at ${data.email}
+
+My github is [${data.github}](https://github.com/${data.github})
 `;
 }
 

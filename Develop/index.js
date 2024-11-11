@@ -33,6 +33,22 @@ const questions = [
         type: 'input',
         name: 'test instructions',
         message: 'give test instructions'
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Select license",
+        choices: ["ISC", "none"]
+    },
+    {
+        type: "input",
+        name: 'email',
+        message: 'enter email'
+    },
+    {
+        type: 'input',
+        name: 'github profile',
+        message: 'Enter github profile name'
     }
 ];
 
@@ -50,10 +66,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then((answers) => {
-        const markdownContent = generateMarkdown(answers);
-        writeToFile("Readme.md", markdownContent);
-    })
+        .then((answers) => {
+            const markdownContent = generateMarkdown(answers);
+            writeToFile("Readme.md", markdownContent);
+        })
 }
 
 // Function call to initialize app
